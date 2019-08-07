@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to php-geo 👋</h1>
+<h1 align="center">Welcome to php-ecdh 👋</h1>
 <p>
 </p>
 
