@@ -1,0 +1,46 @@
+{
+    "name": "ti-ecdh/php-ecdh",
+    "description": "ECDH (Elliptic Curve Diffie Hellman) algorithm library based on PHP implementation ",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wujunze",
+            "email": "itwujunze@163.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "wujunze/support": "^1.0",
+        "predis/predis": "^1.1",
+        "wujunze/helper": "^1.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "wujunze/composer-phpcs-plugin": "^1.1",
+        "codedungeon/phpunit-result-printer": "^0.23",
+        "phpunit/phpunit": "^7.5",
+        "overtrue/phplint": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ti\\ECDH\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ti\\ECDH\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit -c phpunit.xml.dist --coverage-text"
+        ],
+        "fix": [
+            "./vendor/bin/php-cs-fixer fix $1"
+        ],
+        "lint": [
+            "./vendor/bin/phplint"
+        ]
+    }
+}

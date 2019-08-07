@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+vendor
+composer.phar
+phpunit.xml
+composer.lock
+.php_cs.cache
+.hg
+.phpunit.result.cache
+clover.xml
+.phplint.cache
